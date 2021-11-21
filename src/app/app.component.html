@@ -1,0 +1,13 @@
+<p>
+  <mat-toolbar>
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button [routerLink]="['/change-text']" routerLinkActive="active" mat-menu-item>Изменение текста</button>
+      <button [routerLink]="['/data']" routerLinkActive="active" mat-menu-item>Отправка данных</button>
+    </mat-menu>
+    <span>Interview App</span>
+  </mat-toolbar>
+</p>
+<router-outlet></router-outlet>

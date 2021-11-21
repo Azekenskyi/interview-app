@@ -1,0 +1,14 @@
+<div class="container">
+  <form [formGroup]="form">
+    <p>{{this.text}}</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Фамилия</mat-label>
+      <input matInput autocomplete="off" maxlength="256" formControlName="firstName">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="input">
+      <mat-label>Имя</mat-label>
+      <input matInput autocomplete="off" maxlength="256" formControlName="lastName">
+    </mat-form-field>
+    <button class="button" mat-flat-button color="primary" (click)="sendData()">Отправить</button>
+  </form>
+</div>

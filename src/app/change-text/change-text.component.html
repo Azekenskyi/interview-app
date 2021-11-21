@@ -1,0 +1,11 @@
+<div class="container">
+  <form [formGroup]="form">
+    <p>{{this.text}}</p>
+    <p *ngIf="countChange !== 0">Общее количество изменение текста: {{this.countChange}}</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Текст</mat-label>
+      <input matInput autocomplete="off" maxlength="256" formControlName="name">
+    </mat-form-field>
+    <button class="button" mat-flat-button color="primary" (click)="sendData()">Отправить</button>
+  </form>
+</div>
